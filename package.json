@@ -1,0 +1,24 @@
+{
+  "name": "markdown-pdf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jakob Guddas <github@jguddas.de>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@microflash/remark-callout-directives": "^4.1.0",
+    "lucide": "^0.390.0",
+    "rehype-document": "^7.0.3",
+    "rehype-pretty-code": "^0.13.2",
+    "rehype-slug": "^6.0.0",
+    "rehype-stringify": "^10.0.0",
+    "remark-directive": "^3.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "tsx": "^4.15.1",
+    "unified": "^11.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2"
+  }
+}
