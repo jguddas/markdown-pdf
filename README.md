@@ -4,16 +4,19 @@ Convert markdown files to PDF or HTML.
 
 ## Requirements
 
-- **`node`**  
-  https://nodejs.org
-- **`prince`**  
-  https://www.princexml.com
-- **`pdfunite` and `pdfinfo`**  
-  https://poppler.freedesktop.org
+- https://nodejs.org
+- https://www.princexml.com
+- https://poppler.freedesktop.org
+
+### Check that the binaries can be found
+
+```sh
+which node prince pdfunite pdfinfo
+```
 
 ## Usage
 
-```bash "pdf" "html"
+```sh "pdf" "html"
 node --import tsx/esm md-to-pdf.ts input.md output.pdf
 node --import tsx/esm md-to-html.ts input.md output.html
 ```
