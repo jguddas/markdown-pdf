@@ -211,15 +211,14 @@ body > h1:first-of-type::before {
   background-position: center;
   background-repeat: no-repeat;
 }
-h2::before {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='28' viewBox='0 0 28 20' width='28' %3E%3Cpath fill='${pageBackground.replace(
+body > h2::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='28' viewBox='0 0 28 20' width='28' %3E%3Cpath fill='${pageBackground.replace(
     /^#/,
     "%23",
   )}' d='M0 0h33.6v33.6H0z'/%3E%3Ccircle cx='14' cy='11' r='5' stroke='${accent.replace(
     /^#/,
     "%23",
   )}' stroke-width='2'%3E%3C/circle%3E%3C/svg%3E");
-  top: -3px;
 }
 ${Object.entries(mappedIcons)
   .map(([id, name]) => `h2[id*='${id}']::before {${createCssIcon(name)}}`)
