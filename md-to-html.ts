@@ -22,6 +22,8 @@ const mappedIcons: Record<string, IconNodeChild[]> = {
   lighthouse: icons.Siren[2]!,
   display: icons.MonitorCheck[2]!,
   setup: icons.Rocket[2]!,
+  features: icons.Rocket[2]!,
+  usage: icons.CirclePlay[2]!,
   experience: icons.Rocket[2]!,
   education: icons.School[2]!,
   success: icons.Zap[2]!,
