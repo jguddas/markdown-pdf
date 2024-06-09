@@ -14,6 +14,15 @@ import { fileURLToPath } from "url";
 type SVGProps = Record<string, string | number>;
 type IconNodeChild = readonly [tag: string, attrs: SVGProps];
 
+type MDOptions={
+  title: string;
+  accent?: string;
+  text?: string;
+  textDimmed?: string;
+  pageBackground?: string;
+  pageHeight?: string;
+}
+
 const mappedIcons: Record<string, IconNodeChild[]> = {
   projects: icons.BookMarked[2]!,
   "open-source": icons.BookMarked[2]!,
@@ -45,14 +54,7 @@ const mappedIcons: Record<string, IconNodeChild[]> = {
 
 export const mdToHtml = (
   md: string,
-  options: {
-    title: string;
-    accent?: string;
-    text?: string;
-    textDimmed?: string;
-    pageBackground?: string;
-    pageHeight?: string;
-  },
+  options: MDOptions,
 ) => {
   const {
     title,
