@@ -2,6 +2,15 @@
 
 Convert markdown files to PDF or HTML.
 
+## Requirements
+
+- **`node`**  
+  https://nodejs.org
+- **`prince`**  
+  https://www.princexml.com
+- **`pdfunite` and `pdfinfo`**  
+  https://poppler.freedesktop.org
+
 ## Usage
 
 ```bash "pdf" "html"
