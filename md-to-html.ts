@@ -6,6 +6,7 @@ import { unified } from "unified";
 import rehypeDocument from "rehype-document";
 import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
+import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
 import rehypePrettyCode from "rehype-pretty-code";
 import { readFileSync, writeFileSync } from "fs";
@@ -579,6 +580,7 @@ blockquote::before {
 
   return unified()
     .use(remarkParse, { fragment: true })
+    .use(remarkGfm)
     .use(remarkDirective)
     .use(remarkCalloutDirectives, calloutOptions)
     .use(remarkRehype)
