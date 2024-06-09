@@ -4,7 +4,7 @@ Convert markdown files to PDF or HTML.
 
 ## Usage
 
-```bash
+```bash "pdf" "html"
 node --import tsx/esm md-to-pdf.ts input.md output.pdf
 node --import tsx/esm md-to-html.ts input.md output.html
 ```
