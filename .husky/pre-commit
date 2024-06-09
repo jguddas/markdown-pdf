@@ -1,0 +1,2 @@
+node --import tsx/esm md-to-pdf.ts README.md README.pdf
+git add README.pdf
