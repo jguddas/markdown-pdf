@@ -286,6 +286,9 @@ body:has(h1)::before {
     max-width: var(--page-width);
     min-width: calc(300px - var(--padding) * 3);
   }
+  pre code {
+    overflow: auto;
+  }
 }
 h1,
 h2,
