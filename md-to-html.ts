@@ -355,7 +355,6 @@ a {
   text-decoration: underline;
 }
 code {
-  font-family: DejaVu Sans Mono;
   background-color: var(--body-background) !important;
   box-shadow: 0 0 0 1px #d0d7de;
   border-radius: 4px;
